@@ -60,7 +60,8 @@ function sum(mixedArr) {
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
 function averageNumbers(numbersAvg) {
-  if (numbersAvg.length === 0) return null; // Handle empty array case
+  if (numbersAvg.length === 0)
+    return null; // Handle empty array case
   const sum = sumNumbers(numbersAvg);
   return (sum / numbersAvg.length);
 }
@@ -70,7 +71,8 @@ function averageNumbers(numbersAvg) {
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
 function averageWordLength(wordsArr) {
-  if (wordsArr.length === 0) return null; // Handle empty array case
+  if (wordsArr.length === 0)
+    return null; // Handle empty array case
   let totalLength = 0;
   for (let i = 0; i < wordsArr.length; i++) {
     totalLength += wordsArr[i].length;
@@ -83,7 +85,8 @@ function averageWordLength(wordsArr) {
 const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
 // should return: 5.7
 function avg(mixedArr) {
-  if (mixedArr.length === 0) return null; // Handle empty array case
+  if (mixedArr.length === 0)
+    return null; // Handle empty array case
   let sum = 0;
   for (let i = 0; i < mixedArr.length; i++) {
     if (typeof mixedArr[i] === 'number') {
@@ -114,9 +117,17 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
-
-
+function uniquifyArray(wordsUnique) {
+  if (wordsUnique.length === 0)
+    return null; // Handle empty array case
+  const uniqueWords = [];
+  for (let i = 0; i < wordsUnique.length; i++) {
+    if (!uniqueWords.includes(wordsUnique[i])) {
+      uniqueWords.push(wordsUnique[i]);
+    }
+  }
+  return uniqueWords;
+}
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
