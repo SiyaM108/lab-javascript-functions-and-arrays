@@ -70,7 +70,7 @@ function averageNumbers(numbersAvg) {
   if (numbersAvg.length === 0)
     return null; // Handle empty array case
   let sum = sumNumbers(numbersAvg);
-  let average = sum / numbersAvg.length;
+  let average = (sum / numbersAvg.length);
   return average;
 }
 //test case
