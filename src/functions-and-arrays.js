@@ -10,6 +10,8 @@ function maxOfTwoNumbers(num1, num2) {
     return num1; // or num2, since they are equal
   }
 }
+//test case
+//console.log(maxOfTwoNumbers(10, 20)); // should return 20
 
 // Iteration #2: Find longest word
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
@@ -23,6 +25,8 @@ function findLongestWord(words) {
   }
   return longestWord;
 }
+//test case
+//console.log(findLongestWord(words)); // should return 'crocodile'
 
 // Iteration #3: Calculate the sum
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
@@ -34,7 +38,8 @@ function sumNumbers(numbers) {
   }
   return sum;
 }
-
+//test case
+//console.log(sumNumbers(numbers)); // should return 87
 
 // Iteration #3.1 Bonus:
 const mixedArr = [6, 12, 'miami', 1, true, 'barca', '200', 'lisboa', 8, 10];
@@ -54,6 +59,8 @@ function sum(mixedArr) {
   }
   return sum;
 }
+//test case
+//console.log(sum(mixedArr)); // should return 57
 
 // Iteration #4: Calculate the average
 // Level 1: Array of numbers
@@ -62,10 +69,12 @@ const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 function averageNumbers(numbersAvg) {
   if (numbersAvg.length === 0)
     return null; // Handle empty array case
-  const sum = sumNumbers(numbersAvg);
-  return (sum / numbersAvg.length);
+  let sum = sumNumbers(numbersAvg);
+  let average = sum / numbersAvg.length;
+  return average;
 }
-
+//test case
+//console.log(averageNumbers(numbersAvg)); // should return 5.875
 
 // Level 2: Array of strings
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
@@ -79,6 +88,8 @@ function averageWordLength(wordsArr) {
   }
   return totalLength / wordsArr.length;
  }
+//test case
+//console.log(averageWordLength(wordsArr)); // should return 5.4
 
 // Bonus - Iteration #4.1
 
@@ -101,6 +112,8 @@ function avg(mixedArr) {
   }
   return sum / mixedArr.length;
 }
+//test case
+//console.log(avg(mixedArr)); // should return 5.7
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -128,6 +141,8 @@ function uniquifyArray(wordsUnique) {
   }
   return uniqueWords;
 }
+//test case
+//console.log(uniquifyArray(wordsUnique)); // should return ['crab', 'poison', 'contagious', 'simple', 'bring', 'sharp', 'playground', 'communion']
 
 // Iteration #6: Find elements
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
@@ -143,8 +158,8 @@ function doesWordExist(wordsFind, word) {
   }
   return false; // Word not found
 }
-
-
+//test case
+//console.log(doesWordExist(wordsFind, 'subset')); // should return true
 
 // Iteration #7: Count repetition
 const wordsCount = [
@@ -173,6 +188,8 @@ function howManyTimes(wordsCount, wordExample) {
   }
   return count;
 }
+//test case
+//console.log(howManyTimes(wordsCount, 'matter')); // should return 4
 
 // Iteration #8: Bonus - Product of adjacent numbers
 const matrix = [
@@ -225,6 +242,8 @@ function greatestProduct(matrix) {
 
   return maxProduct;
 }
+//test case
+//console.log(greatestProduct(matrix)); // should return the greatest product of adjacent numbers in the matrix
 
 // Bonus - Iteration #8.1  - Product of adjacent numbers
 function greatestProductOfDiagonals(matrix) {
@@ -254,7 +273,8 @@ function greatestProductOfDiagonals(matrix) {
 
   return maxProduct;
 }
-
+//test case
+//console.log(greatestProductOfDiagonals(matrix)); // should return the greatest product of adjacent numbers in diagonals of the matrix
 
 
 // The following is required to make unit tests work.
